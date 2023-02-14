@@ -20,7 +20,6 @@ public:
 	Stack(int);
 
 	// Copy Constructor
-	// Takes object for existing stack
 	Stack(const Stack&);
 
 	// Destructor
@@ -72,7 +71,7 @@ Stack<T>::~Stack()
 		delete[] stackArray;
 }
 
-// Member function push : Pushes the argument onto the stack
+// Pushes the argument onto the stack
 template <class T>
 void Stack<T>::push(T item)
 {
@@ -86,7 +85,7 @@ void Stack<T>::push(T item)
 	}
 }
 
-// Member function pop: Pops the value at the top of the stack off,
+// Pops the value at the top of the stack off,
 // and copies it into the variable passed as an argument
 template <class T>
 void Stack<T>::pop(T& item)
@@ -101,7 +100,7 @@ void Stack<T>::pop(T& item)
 	}
 }
 
-// Member function isFull: Returns true if the stack is full, or false otherwise
+// Returns true if the stack is full, or false otherwise
 template <class T>
 bool Stack<T>::isFull()
 {
@@ -115,7 +114,7 @@ bool Stack<T>::isFull()
 	return status;
 }
 
-// Member function isEmpty: Returns true if the stack is empty, false otherwise
+// Returns true if the stack is empty, false otherwise
 template <class T>
 bool Stack<T>::isEmpty()
 {
@@ -129,7 +128,7 @@ bool Stack<T>::isEmpty()
 	return status;
 }
 
-// Member function dump: Prints the contents of the stack is empty, or false otherwise
+// Prints the contents of the stack is empty, or false otherwise
 template <class T>
 bool Stack<T>::dump()
 {
